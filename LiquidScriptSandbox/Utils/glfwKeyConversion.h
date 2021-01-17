@@ -1,0 +1,146 @@
+#pragma once
+#include <GLFW/glfw3.h>
+#include <string>
+
+namespace utils {
+
+
+	static std::string MouseButtonToString(int code) {
+		if (code == GLFW_MOUSE_BUTTON_1) return "mouse_1";
+		if (code == GLFW_MOUSE_BUTTON_2) return "mouse_2";
+		if (code == GLFW_MOUSE_BUTTON_3) return "mouse_3";
+		if (code == GLFW_MOUSE_BUTTON_4) return "mouse_4";
+		if (code == GLFW_MOUSE_BUTTON_5) return "mouse_5";
+		if (code == GLFW_MOUSE_BUTTON_6) return "mouse_6";
+		if (code == GLFW_MOUSE_BUTTON_7) return "mouse_7";
+		if (code == GLFW_MOUSE_BUTTON_8) return "mouse_8";
+		if (code == GLFW_MOUSE_BUTTON_LAST) return "mouse_last";
+		if (code == GLFW_MOUSE_BUTTON_LEFT) return "mouse_left";
+		if (code == GLFW_MOUSE_BUTTON_RIGHT) return "mouse_right";
+		if (code == GLFW_MOUSE_BUTTON_MIDDLE) return "mouse_middle";
+	}
+
+	static std::string KeyToString(int code) {
+		if (code == GLFW_KEY_UNKNOWN) return "unknown";
+		if (code == GLFW_KEY_SPACE) return "space";
+		if (code == GLFW_KEY_APOSTROPHE) return "apostrophe";
+		if (code == GLFW_KEY_COMMA) return "comma";
+		if (code == GLFW_KEY_MINUS) return "minus";
+		if (code == GLFW_KEY_PERIOD) return "period";
+		if (code == GLFW_KEY_SLASH) return "slash";
+		if (code == GLFW_KEY_0) return "0";
+		if (code == GLFW_KEY_1) return "1";
+		if (code == GLFW_KEY_2) return "2";
+		if (code == GLFW_KEY_3) return "3";
+		if (code == GLFW_KEY_4) return "4";
+		if (code == GLFW_KEY_5) return "5";
+		if (code == GLFW_KEY_6) return "6";
+		if (code == GLFW_KEY_7) return "7";
+		if (code == GLFW_KEY_8) return "8";
+		if (code == GLFW_KEY_9) return "9";
+		if (code == GLFW_KEY_SEMICOLON) return "semicolon";
+		if (code == GLFW_KEY_EQUAL) return "equal";
+		if (code == GLFW_KEY_A) return "a";
+		if (code == GLFW_KEY_B) return "b";
+		if (code == GLFW_KEY_C) return "c";
+		if (code == GLFW_KEY_D) return "d";
+		if (code == GLFW_KEY_E) return "e";
+		if (code == GLFW_KEY_F) return "f";
+		if (code == GLFW_KEY_G) return "g";
+		if (code == GLFW_KEY_H) return "h";
+		if (code == GLFW_KEY_I) return "i";
+		if (code == GLFW_KEY_J) return "j";
+		if (code == GLFW_KEY_K) return "k";
+		if (code == GLFW_KEY_L) return "l";
+		if (code == GLFW_KEY_M) return "m";
+		if (code == GLFW_KEY_N) return "n";
+		if (code == GLFW_KEY_O) return "o";
+		if (code == GLFW_KEY_P) return "p";
+		if (code == GLFW_KEY_Q) return "q";
+		if (code == GLFW_KEY_R) return "r";
+		if (code == GLFW_KEY_S) return "s";
+		if (code == GLFW_KEY_T) return "t";
+		if (code == GLFW_KEY_U) return "u";
+		if (code == GLFW_KEY_V) return "v";
+		if (code == GLFW_KEY_W) return "w";
+		if (code == GLFW_KEY_X) return "x";
+		if (code == GLFW_KEY_Y) return "y";
+		if (code == GLFW_KEY_Z) return "z";
+		if (code == GLFW_KEY_LEFT_BRACKET) return "left_bracket";
+		if (code == GLFW_KEY_BACKSLASH) return "backslash";
+		if (code == GLFW_KEY_RIGHT_BRACKET) return "right_bracket";
+		if (code == GLFW_KEY_GRAVE_ACCENT) return "grave_accent";
+		if (code == GLFW_KEY_WORLD_1) return "world_1";
+		if (code == GLFW_KEY_WORLD_2) return "world_2";
+		if (code == GLFW_KEY_ESCAPE) return "escape";
+		if (code == GLFW_KEY_ENTER) return "enter";
+		if (code == GLFW_KEY_TAB) return "tab";
+		if (code == GLFW_KEY_BACKSPACE) return "backspace";
+		if (code == GLFW_KEY_INSERT) return "insert";
+		if (code == GLFW_KEY_DELETE) return "delete";
+		if (code == GLFW_KEY_RIGHT) return "right";
+		if (code == GLFW_KEY_LEFT) return "left";
+		if (code == GLFW_KEY_DOWN) return "down";
+		if (code == GLFW_KEY_UP) return "up";
+		if (code == GLFW_KEY_PAGE_UP) return "page_up";
+		if (code == GLFW_KEY_PAGE_DOWN) return "page_down";
+		if (code == GLFW_KEY_HOME) return "home";
+		if (code == GLFW_KEY_END) return "end";
+		if (code == GLFW_KEY_CAPS_LOCK) return "caps_lock";
+		if (code == GLFW_KEY_SCROLL_LOCK) return "scroll_lock";
+		if (code == GLFW_KEY_NUM_LOCK) return "num_lock";
+		if (code == GLFW_KEY_PRINT_SCREEN) return "print_screen";
+		if (code == GLFW_KEY_PAUSE) return "pause";
+		if (code == GLFW_KEY_F1) return "f1";
+		if (code == GLFW_KEY_F2) return "f2";
+		if (code == GLFW_KEY_F3) return "f3";
+		if (code == GLFW_KEY_F4) return "f4";
+		if (code == GLFW_KEY_F5) return "f5";
+		if (code == GLFW_KEY_F6) return "f6";
+		if (code == GLFW_KEY_F7) return "f7";
+		if (code == GLFW_KEY_F8) return "f8";
+		if (code == GLFW_KEY_F9) return "f9";
+		if (code == GLFW_KEY_F10) return "f10";
+		if (code == GLFW_KEY_F11) return "f11";
+		if (code == GLFW_KEY_F12) return "f12";
+		if (code == GLFW_KEY_F13) return "f13";
+		if (code == GLFW_KEY_F14) return "f14";
+		if (code == GLFW_KEY_F15) return "f15";
+		if (code == GLFW_KEY_F16) return "f16";
+		if (code == GLFW_KEY_F17) return "f17";
+		if (code == GLFW_KEY_F18) return "f18";
+		if (code == GLFW_KEY_F19) return "f19";
+		if (code == GLFW_KEY_F20) return "f20";
+		if (code == GLFW_KEY_F21) return "f21";
+		if (code == GLFW_KEY_F22) return "f22";
+		if (code == GLFW_KEY_F23) return "f23";
+		if (code == GLFW_KEY_F24) return "f24";
+		if (code == GLFW_KEY_F25) return "f25";
+		if (code == GLFW_KEY_KP_0) return "kp_0";
+		if (code == GLFW_KEY_KP_1) return "kp_1";
+		if (code == GLFW_KEY_KP_2) return "kp_2";
+		if (code == GLFW_KEY_KP_3) return "kp_3";
+		if (code == GLFW_KEY_KP_4) return "kp_4";
+		if (code == GLFW_KEY_KP_5) return "kp_5";
+		if (code == GLFW_KEY_KP_6) return "kp_6";
+		if (code == GLFW_KEY_KP_7) return "kp_7";
+		if (code == GLFW_KEY_KP_8) return "kp_8";
+		if (code == GLFW_KEY_KP_9) return "kp_9";
+		if (code == GLFW_KEY_KP_DECIMAL) return "kp_decimal";
+		if (code == GLFW_KEY_KP_DIVIDE) return "kp_divide";
+		if (code == GLFW_KEY_KP_MULTIPLY) return "kp_multiply";
+		if (code == GLFW_KEY_KP_SUBTRACT) return "kp_subtract";
+		if (code == GLFW_KEY_KP_ADD) return "kp_add";
+		if (code == GLFW_KEY_KP_ENTER) return "kp_enter";
+		if (code == GLFW_KEY_KP_EQUAL) return "kp_equal";
+		if (code == GLFW_KEY_LEFT_SHIFT) return "left_shift";
+		if (code == GLFW_KEY_LEFT_CONTROL) return "left_control";
+		if (code == GLFW_KEY_LEFT_ALT) return "left_alt";
+		if (code == GLFW_KEY_LEFT_SUPER) return "left_super";
+		if (code == GLFW_KEY_RIGHT_SHIFT) return "right_shift";
+		if (code == GLFW_KEY_RIGHT_CONTROL) return "right_control";
+		if (code == GLFW_KEY_RIGHT_ALT) return "right_alt";
+		if (code == GLFW_KEY_RIGHT_SUPER) return "right_super";
+		if (code == GLFW_KEY_MENU) return "menu";
+	}
+}

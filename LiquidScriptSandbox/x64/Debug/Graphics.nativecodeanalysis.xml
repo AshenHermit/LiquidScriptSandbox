@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\user\source\repos\cpp\games\LiquidScriptSandbox\LiquidScriptSandbox\System\</FILEPATH>
+      <FILENAME>Graphics.cpp</FILENAME>
+      <LINE>29</LINE>
+      <COLUMN>30</COLUMN>
+    </SFA>
+    <DEFECTCODE>26815</DEFECTCODE>
+    <DESCRIPTION>The pointer is dangling because it points at a temporary instance which was destroyed.</DESCRIPTION>
+    <FUNCTION>graphics::Graphics::CreateShaderProgram</FUNCTION>
+    <DECORATED>?CreateShaderProgram@Graphics@graphics@@SAHV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z</DECORATED>
+    <FUNCLINE>26</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\user\source\repos\cpp\games\LiquidScriptSandbox\LiquidScriptSandbox\System\</FILEPATH>
+      <FILENAME>Graphics.cpp</FILENAME>
+      <LINE>30</LINE>
+      <COLUMN>32</COLUMN>
+    </SFA>
+    <DEFECTCODE>26815</DEFECTCODE>
+    <DESCRIPTION>The pointer is dangling because it points at a temporary instance which was destroyed.</DESCRIPTION>
+    <FUNCTION>graphics::Graphics::CreateShaderProgram</FUNCTION>
+    <DECORATED>?CreateShaderProgram@Graphics@graphics@@SAHV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z</DECORATED>
+    <FUNCLINE>26</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\user\source\repos\cpp\games\LiquidScriptSandbox\LiquidScriptSandbox\System\</FILEPATH>
+      <FILENAME>Graphics.cpp</FILENAME>
+      <LINE>108</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'graphics::Mesh::vao' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>graphics::Mesh::{ctor}</FUNCTION>
+    <DECORATED>??0Mesh@graphics@@QEAA@XZ</DECORATED>
+    <FUNCLINE>108</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>graphics::Mesh::vao</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\user\source\repos\cpp\games\LiquidScriptSandbox\LiquidScriptSandbox\System\</FILEPATH>
+      <FILENAME>Graphics.cpp</FILENAME>
+      <LINE>108</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'graphics::Mesh::vbo' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>graphics::Mesh::{ctor}</FUNCTION>
+    <DECORATED>??0Mesh@graphics@@QEAA@XZ</DECORATED>
+    <FUNCLINE>108</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>graphics::Mesh::vbo</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\user\source\repos\cpp\games\LiquidScriptSandbox\LiquidScriptSandbox\System\</FILEPATH>
+      <FILENAME>Graphics.cpp</FILENAME>
+      <LINE>113</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'graphics::Mesh::vao' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>graphics::Mesh::{ctor}</FUNCTION>
+    <DECORATED>??0Mesh@graphics@@QEAA@QEAPEAM@Z</DECORATED>
+    <FUNCLINE>113</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>graphics::Mesh::vao</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\user\source\repos\cpp\games\LiquidScriptSandbox\LiquidScriptSandbox\System\</FILEPATH>
+      <FILENAME>Graphics.cpp</FILENAME>
+      <LINE>113</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'graphics::Mesh::vbo' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>graphics::Mesh::{ctor}</FUNCTION>
+    <DECORATED>??0Mesh@graphics@@QEAA@QEAPEAM@Z</DECORATED>
+    <FUNCLINE>113</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>graphics::Mesh::vbo</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

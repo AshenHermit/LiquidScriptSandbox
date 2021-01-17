@@ -1,0 +1,13 @@
+﻿  Addon.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
+C:\Users\user\source\repos\cpp\[Libraries]\glad\include\glad\glad.h(32): message : see previous definition of 'APIENTRY'
+  Game.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
+C:\Users\user\source\repos\cpp\[Libraries]\glad\include\glad\glad.h(32): message : see previous definition of 'APIENTRY'
+  Player.cpp
+  LiquidScriptSandbox.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
+C:\Users\user\source\repos\cpp\[Libraries]\glad\include\glad\glad.h(32): message : see previous definition of 'APIENTRY'
+  Generating Code...
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  LiquidScriptSandbox.vcxproj -> C:\Users\user\source\repos\cpp\games\LiquidScriptSandbox\Build_x64_Debug\LiquidScriptSandbox.exe
