@@ -22,9 +22,14 @@ namespace graphics {
 		int channels=0;
 		int width=0;
 		int height=0;
+		bool loaded = false;
+
+		unsigned char* pixelData;
 
 		GLuint gl_tex=0;
 
+		void ThreadedDownloadFromUrl(std::string url);
+		void DownloadFromUrl(std::string url);
 		void LoadFromFile(std::string path);
 		void LoadFromRawData(std::string data);
 		void LoadFromImageData(unsigned char* data);
@@ -49,7 +54,7 @@ namespace graphics {
 		Camera();
 		glm::vec2 position;
 		float rotation=0.0f;
-		float zoom=1.0f;
+		float zoom=0.5f;
 		float ratio=1.0f;
 
 		void UpdateViewMatrix(glm::mat4& matrix);

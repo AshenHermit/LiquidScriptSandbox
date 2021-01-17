@@ -19,11 +19,12 @@ public:
 
 	void ProcessEvents();
 
+	void UpdateUI();
 	void Init();
 	void Update();
 	void Draw();
 
-	void key_callback(GLFWwindow* win, int key, int scancode, int action, int mods);
+	static void key_callback(GLFWwindow* win, int key, int scancode, int action, int mods);
 };
 
 

@@ -120,6 +120,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>C:\Users\user\source\repos\cpp\[Libraries]\SDL2-2.0.12\include;C:\Users\user\source\repos\cpp\[Libraries]\box2d\include;C:\Users\user\source\repos\cpp\[Libraries]\lua52\include;C:\Users\user\source\repos\cpp\[Libraries]\SDL2_image-2.0.5\include;C:\Users\user\source\repos\cpp\[Libraries]\SFML-2.5.1\include;C:\Users\user\source\repos\cpp\[Libraries]\sol2-develop\include;C:\Users\user\source\repos\cpp\[Libraries]\openssl-1.1.1i\include;C:\Users\user\source\repos\cpp\[Libraries]\curl\builds\libcurl-vc-x64-release-static-ipv6-sspi-schannel\include;C:\Users\user\source\repos\cpp\[Libraries]\glad\include;C:\Users\user\source\repos\cpp\[Libraries]\glfw\include;C:\Users\user\source\repos\cpp\[Libraries]\glm</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <ExceptionHandling>Async</ExceptionHandling>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -137,6 +138,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>C:\Users\user\source\repos\cpp\[Libraries]\SDL2-2.0.12\include;C:\Users\user\source\repos\cpp\[Libraries]\box2d\include;C:\Users\user\source\repos\cpp\[Libraries]\lua52\include;C:\Users\user\source\repos\cpp\[Libraries]\SDL2_image-2.0.5\include;C:\Users\user\source\repos\cpp\[Libraries]\SFML-2.5.1\include;C:\Users\user\source\repos\cpp\[Libraries]\sol2-develop\include;C:\Users\user\source\repos\cpp\[Libraries]\openssl-1.1.1i\include;C:\Users\user\source\repos\cpp\[Libraries]\curl\builds\libcurl-vc-x64-release-static-ipv6-sspi-schannel\include;C:\Users\user\source\repos\cpp\[Libraries]\glad\include;C:\Users\user\source\repos\cpp\[Libraries]\glfw\include;C:\Users\user\source\repos\cpp\[Libraries]\glm</AdditionalIncludeDirectories>
+      <ExceptionHandling>Async</ExceptionHandling>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -171,6 +173,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game\Addons\Addon.h" />
+    <ClInclude Include="Game\Define.h" />
     <ClInclude Include="Game\Game.h" />
     <ClInclude Include="Game\Objects\Player.h" />
     <ClInclude Include="ImGui\imconfig.h" />
@@ -187,9 +190,11 @@
     <ClInclude Include="System\Math\Vector2.h" />
     <ClInclude Include="System\RequestManager.h" />
     <ClInclude Include="System\Resources.h" />
+    <ClInclude Include="Utils\ExceptionTranslator.h" />
     <ClInclude Include="Utils\FileManager.h" />
     <ClInclude Include="System\Global.h" />
     <ClInclude Include="System\Window.h" />
+    <ClInclude Include="Utils\glfwKeyConversion.h" />
     <ClInclude Include="Utils\stb_image.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

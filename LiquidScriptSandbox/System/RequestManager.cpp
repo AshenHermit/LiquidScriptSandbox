@@ -27,7 +27,7 @@ RequestManager::~RequestManager()
     curl_easy_cleanup(ch);
 }
 
-std::string RequestManager::Request(std::string url)
+std::string RequestManager::Get(std::string url)
 {
     response_body = "";
     curl_easy_setopt(ch, CURLOPT_URL, url.c_str());
@@ -59,11 +59,6 @@ std::string RequestManager::Request(std::string url)
         printf("*** transfer failed ***\n");
     }
     return "";
-}
-
-graphics::Texture RequestManager::GetTextureFromUrl(std::string url)
-{
-    return graphics::Texture(Request(url));
 }
 
 CURLcode RequestManager::sslctx_function(CURL* curl, void* sslctx, void* parm)

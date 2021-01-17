@@ -23,8 +23,7 @@ public:
 
 	RequestManager();
 	~RequestManager();
-	std::string Request(std::string url);
-	graphics::Texture GetTextureFromUrl(std::string url);
+	std::string Get(std::string url);
 
 	static CURLcode sslctx_function(CURL* curl, void* sslctx, void* parm);
 	static size_t writeFunction(void* ptr, size_t size, size_t nmemb, std::string* data);

@@ -4,6 +4,7 @@
 #include "../Objects/Player.h"
 #include <unordered_map>
 #include <map>
+#include "../Define.h"
 
 struct ImageManager {
 	
@@ -15,10 +16,13 @@ public:
 	Addon();
 	Addon(std::string addonPath, gobj::Player_Ptr _player);
 
+	bool isActive = true;
+
 	sol::state lua = sol::state();
 	gobj::Player_Ptr player;
 
 	std::string rootFolder;
+	std::string name;
 
 	std::map<std::string, std::shared_ptr<graphics::Texture>> textures;
 

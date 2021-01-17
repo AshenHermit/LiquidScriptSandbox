@@ -3,6 +3,10 @@
 #include "Graphics/Graphics.h"
 #include "RequestManager.h"
 
+#include <map>
+#include <mutex>
+class Game;
+
 namespace sys {
 	class Global
 	{
@@ -15,6 +19,12 @@ namespace sys {
 		Window* main_window;
 		graphics::Graphics* gctx_ptr;
 		RequestManager requests;
+
+		Game* gameInstance;
+
+		graphics::Texture* placeholderTexture;
+
+		std::mutex mutex;
 
 		std::map<std::string, bool> keyCodes;
 	};

@@ -1,11 +1,15 @@
 #include <iostream>
 
+#include "Utils/ExceptionTranslator.h"
+
 #include "System/Window.h"
 #include "System/Global.h"
 #include "Game/Game.h"
 
 #include "System/Graphics/Graphics.h"
 #include "System/Graphics/Shader.h"
+
+
 
 sys::Global global;
 
@@ -16,6 +20,7 @@ Game game;
 
 void Init() {
 	global.main_window = &window;
+	global.gameInstance = &game;
 
 	glfwSetKeyCallback(global.main_window->glfw_window, Game::key_callback);
 
@@ -33,19 +38,12 @@ void MainLoop() {
 
 		//ui
 		window.StartUI();
-
-		ImGui::Begin("Another Window");
-		ImGui::Text("Hello from another window!");
-		if (ImGui::Button("Say something"))
-			std::cout << "you smell good" << std::endl;
-		ImGui::End();
+		game.UpdateUI();
 
 		window.Clear();
 
 		// draw
 		game.Draw();
-
-		game.gctx.DrawSquare();
 
 		window.Display();
 	}
@@ -54,6 +52,7 @@ void MainLoop() {
 
 int main()
 {
+	Scoped_SE_Translator scoped_se_translator{ se_trans_func };
 	Init();
 	MainLoop();
 

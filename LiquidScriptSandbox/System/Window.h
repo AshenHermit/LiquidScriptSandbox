@@ -28,8 +28,6 @@ namespace sys {
 
 		void InitOpenGL(int& width, int& height);
 
-		template <typename T>
-		void SetKeyCallback(void(T::*)(GLFWwindow*, int, int, int, int));
 		void PollEvents();
 		void StartUI();
 		void Clear();

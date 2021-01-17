@@ -140,5 +140,14 @@
     <ClInclude Include="System\RequestManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Utils\glfwKeyConversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Define.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ExceptionTranslator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
